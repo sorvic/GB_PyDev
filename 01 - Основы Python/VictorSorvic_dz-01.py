@@ -54,6 +54,7 @@ for i in range(1, 1000):
 
 print(f'\nПервоначальный список: {list}')
 print(f'\nЗадание 2-a:')
+sum_list = 0
 for i in list:
     num_str = str(i)
     indx = 0
@@ -63,8 +64,12 @@ for i in list:
         indx += 1
     if (sum_num % 7) == 0:
         print(f'Сумма цифр числа {i} равна {sum_num} и это делится на 7')
+        sum_list += i
+
+print(f'Сумма всех чисел из списка выше: {sum_list}')
 
 print(f'\nЗадание 2-b:')
+sum_list_2 = 0
 for i in list:
     num_str = str(i+17)
     indx = 0
@@ -74,6 +79,9 @@ for i in list:
         indx += 1
     if (sum_num % 7) == 0:
         print(f'Сумма цифр числа ({i}+17) равна {sum_num} и это делится на 7')
+        sum_list_2 += int(num_str)
+
+print(f'Сумма всех чисел из списка выше: {sum_list_2}')
 
 
 """  ЗАДАНИЕ 1_3
@@ -89,6 +97,7 @@ for i in list:
 ...
 100 процентов
 """
+print(f'\nЗадание 3:')
 list_2 = []
 for i in range(1, 101):
     list_2.append(i)
