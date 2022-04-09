@@ -11,3 +11,8 @@
 9. ООП
 10. ООП-Продвинутый
 11. ООП-ПолезныеДополнения
+
+### [06 - Основы JavaScript (2022-04)](https://github.com/sorvic/GB_PyDev/tree/main/06%20-%20Основы%20JavaScript)
+1. Основы языка JavaScript
+2. Основные операторы JavaScript
+3. 
