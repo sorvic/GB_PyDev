@@ -93,21 +93,37 @@ switch (number) {
  */
 console.log('\nЗадача №5');
 
-function arithmeticOperations (arg1, arg2) {
-    let sumArray = [];
-    sumArray.unshift(arg1 + arg2);
-    sumArray.unshift(arg1 - arg2);
-    sumArray.unshift(arg1 * arg2);
-    sumArray.unshift(arg1 / arg2);
-    return console.log(`Арифметические операции аргументов ${arg1} и ${arg2}\n\
-+ -> ${sumArray[3]}\n- -> ${sumArray[2]}\n\
-* -> ${sumArray[1]}\n/ -> ${sumArray[0]}\n`);
+// function arithmeticOperations (arg1, arg2) {
+//     let sumArray = [];
+//     sumArray.unshift(arg1 + arg2);
+//     sumArray.unshift(arg1 - arg2);
+//     sumArray.unshift(arg1 * arg2);
+//     sumArray.unshift(arg1 / arg2);
+//     return console.log(`Арифметические операции аргументов ${arg1} и ${arg2}\n\
+// + -> ${sumArray[3]}\n- -> ${sumArray[2]}\n\
+// * -> ${sumArray[1]}\n/ -> ${sumArray[0]}\n`);
+// }
+
+function add(arg1, arg2) {
+    return console.log(arg1 + arg2)
 }
 
-arithmeticOperations(2,2);
-arithmeticOperations(2,-2);
-arithmeticOperations(5,-2);
-arithmeticOperations(0,2);
+function subt(arg1, arg2) {
+    return console.log(arg1 - arg2)
+}
+
+function mult(arg1, arg2) {
+    return console.log(arg1 * arg2)
+}
+
+function div(arg1, arg2) {
+    return console.log(arg1 / arg2)
+}
+
+add(6,2);
+subt(6,2);
+mult(6,2);
+div(6,2);
 
 /*
 6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
@@ -119,18 +135,18 @@ console.log('\nЗадача №6');
 
 function mathOperation(arg1, arg2, operation) {
     switch (operation) {
-        case '+' : return console.log(arg1 + arg2);
-        case '-' : return console.log(arg1 - arg2);
-        case '*' : return console.log(arg1 * arg2);
-        case '/' : return console.log(arg1 / arg2);
+        case '+' : return add(arg1, arg2);
+        case '-' : return subt(arg1, arg2);
+        case '*' : return mult(arg1, arg2);
+        case '/' : return div(arg1, arg2);
         default : console.log('Проверьте правильность аргументов!');
     }
 }
 
-mathOperation(2,2, '+');
-mathOperation(2,2, '-');
-mathOperation(2,2, '*');
-mathOperation(2,2, '/');
+mathOperation(6,2, '+');
+mathOperation(6,2, '-');
+mathOperation(6,2, '*');
+mathOperation(6,2, '/');
 mathOperation(2,2, 'abs');
 
 
